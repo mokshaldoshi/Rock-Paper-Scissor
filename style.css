@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body {
+    background-color: #F3F8FF;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.25s ease , box-shadow 0.25s ease;
+    cursor: pointer;
+}
+h1:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.choice {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease , box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #081b31;
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 3rem;
+}
+
+.score-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#user-score,
+#comp-score {
+    font-size: 3rem;
+}
+#rock,
+#paper,
+#scissors {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.message {
+    font-size: 1.5rem;
+    background-color: #081b31;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s ease , box-shadow 0.25s ease;
+    cursor: pointer;
+}
+.message:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
