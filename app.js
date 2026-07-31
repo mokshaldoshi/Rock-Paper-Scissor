@@ -29,7 +29,8 @@ const winner = (userWin , userChoice , compChoice) => {
         userScore++;
         nWon++;
         userScP.innerText = userScore;
-        p.innerText = "You win !";
+        p.innerText = `You won ! Comp choose ${compChoice}`;
+        showFireworks();
         divP.style.backgroundColor = "green";
         winSound.currentTime = 0;
         winSound.play();
@@ -38,7 +39,7 @@ const winner = (userWin , userChoice , compChoice) => {
         compScore++;
         nLost++;
         compScP.innerText = compScore;
-        p.innerText = "You lose !";
+        p.innerText = `You lost ! Comp Choose ${compChoice}`;
         divP.style.backgroundColor = "red";
         loseSound.currentTime = 0;
         loseSound.play();
@@ -76,3 +77,13 @@ choices.forEach((choice) => {
         mainGame(userChoice);
     });
 }); 
+
+function showFireworks() {
+    confetti({
+        particleCount: 200,
+        spread: 150,
+        origin: {
+            y: 0.5
+        }
+    });
+}
