@@ -5,12 +5,14 @@ let nDrawn = 0 , nWon = 0 , nLost = 0
 const choices = document.querySelectorAll(".choice"); 
 const p = document.querySelector("#pick-move");
 
+const body = document.body;
 const userScP = document.querySelector("#user-score");
 const compScP = document.querySelector("#comp-score");
 const divP = document.querySelector(".message");
 const winSound = document.querySelector("#win-sound");
 const loseSound = document.querySelector("#lose-sound");
 const drawSound = document.querySelector("#draw-sound");
+const btn = document.querySelector(".btn-theme");
 
 const getCompChoice = () => {
     const options = ["rock" , "paper" , "scissors"];
@@ -87,3 +89,17 @@ function showFireworks() {
         }
     });
 }
+btn.addEventListener("click" , () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(btn.innerText === "Dark 🌙"){
+        btn.innerText = "Light ☀️"  
+        btn.style.backgroundColor = "#EAEAEA";
+        btn.style.color = "black";
+    }
+    else{
+        btn.innerText = "Dark 🌙";
+        btn.style.backgroundColor = "black";
+        btn.style.color = "white";
+    }
+});

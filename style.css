@@ -5,6 +5,7 @@
 }
 body {
     background-color: #F3F8FF;
+    transition: background-color 0.8s ease;
 }
 
 h1 {
@@ -94,4 +95,37 @@ img {
 .message:hover{
     transform: scale(1.08);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.btn-theme{
+    height: 50px;
+    width:100px;
+    background-color: #242322;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    transition: transform 0.25s ease;
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    border: none;
+    cursor: pointer;
+}   
+.btn-theme:hover{
+    transform: scale(1.08);
+}
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+.dark-mode .choice{
+    border: 3px solid rgba(255, 255, 255, 0.5)
+}
+.light-btn{
+    background-color: white;
+    color: black;
+}
+.black-btn{
+    background-color: black;
+    color: white;
 }
